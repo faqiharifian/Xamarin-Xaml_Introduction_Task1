@@ -12,6 +12,12 @@ namespace Modul2_Task1
 		public MainPage()
 		{
 			InitializeComponent();
-		}
-	}
+            btnHello.Clicked += BtnHello_Clicked;
+        }
+
+        private void BtnHello_Clicked(object sender, EventArgs e)
+        {
+            lblDetail.Text = entryHello.Text;
+        }
+    }
 }

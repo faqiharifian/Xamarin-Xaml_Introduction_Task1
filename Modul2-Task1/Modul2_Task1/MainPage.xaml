@@ -4,8 +4,18 @@
              xmlns:local="clr-namespace:Modul2_Task1"
              x:Class="Modul2_Task1.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout HeightRequest="1000">
+            <Label Text="Practice 2.1"  FontSize="40" HorizontalOptions="Center"/>
+            <Label x:Name="lblDetail" Text="Label ini digunakan untuk menampilkan detail" 
+        FontSize="20" HorizontalOptions="CenterAndExpand"/>
+            <Button x:Name="btnHello" Text="Hello Button" HorizontalOptions="Center" 
+          VerticalOptions="Fill" />
+            <Entry x:Name="entryHello" Placeholder="Username" VerticalOptions="Center" 
+        Keyboard="Text"/>
+            <Image x:Name="helloImg" Source="icon.png" Aspect="AspectFit" 
+        HorizontalOptions="Center" VerticalOptions="Fill"/>
+        </StackLayout>
+    </ScrollView>
 
 </ContentPage>
